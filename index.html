@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COISAS GREEN</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body class="background">
+  <!-- Header Section -->
+  <header>
+    <h1 class="point">
+      <img src="logo.jpeg" alt="Logo" width="140px">
+      <p><b>Apostas Do Gabriel Grupo vip</b></p>
+      <p class="channel">private channel</p>
+      <p class="inscritos">20.7K inscritos</p>
+    </h1>
+  </header>
+
+  <!-- Login Section -->
+  <div class="login-page">
+    <form id="loginForm" onsubmit="return validatePassword();">
+      <p id="passwordInput">
+        <label for="password" class="email">Senha</label> <br>
+        <input placeholder="senha" type="password" id="password" name="password" required>
+      </p>
+      <p id="down" class="instructions">
+        Certifique-se de que é uma palavra-passe correta e ativada. O código expira em <b>10min</b>.
+      </p>
+      <p class="login">
+        <button id="loginBtn" type="submit">Aceder</button>
+      </p>
+    </form>
+    <div id="message" class="message"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
