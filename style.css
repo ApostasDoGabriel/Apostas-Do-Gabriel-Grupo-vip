@@ -1,0 +1,119 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white; /* Neon blue background */
+    color: black; /* White text */
+    text-align: center;
+  }
+  
+  /* Header Section */
+  header {
+    padding: 20px 0;
+    background: whitesmoke; /* Black background for contrast */
+    border-bottom: 2px solid #0088cc; /* Neon pink border */
+  }
+  
+  header h1 {
+    margin: 0;
+    color: #FF0080; /* Neon pink for headings */
+  }
+  
+  header p {
+    margin: 5px 0;
+    color: black; /* White for subtext */
+  }
+  
+  .channel {
+    font-size: 18px;
+    font-style: italic;
+  }
+  
+  .inscritos {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  /* Login Section */
+  .login-page {
+    margin-top: 30px;
+    background-color: whitesmoke; /* Black container for login */
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    margin: 30px auto;
+    border: 2px solid #0088cc; /* Neon pink border */
+    border-radius: 9px;
+    box-shadow: 0 0 20px #3700ff; /* Neon glow effect */
+  }
+  
+  form {
+    color: black;
+  }
+  
+  .email {
+    color: black; /* Neon pink label */
+    font-weight: bold;
+  }
+  
+  input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #0088cc; /* Neon pink border */
+    border-radius: 5px;
+    background: white; /* Neon blue background */
+    color:black;
+    font-size: 14px;
+  }
+  
+  input[type="password"]::placeholder {
+    color: rgb(36, 35, 35); /* Soft pink placeholder */
+  }
+  
+  button#loginBtn {
+    background-color: #0088cc; /* Neon pink button */
+    color: white;
+    font-size: 16px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button#loginBtn:hover {
+    background-color: rgba(58, 58, 235, 0.199); /* Light pink on hover */
+    color: black; /* Neon blue text */
+  }
+  
+  /* Message Styles */
+  .message {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
+  .success {
+    color: green;
+  }
+  
+  .error {
+    color: red;
+  }
+  
+  .timeout {
+    color: orange;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .login-page {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    input[type="password"] {
+      width: 100%;
+    }
+  }
+  
