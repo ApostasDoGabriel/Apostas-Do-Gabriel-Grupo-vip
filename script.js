@@ -4,9 +4,7 @@ const correctPassword2 = "VIPADG09"; // Second correct password
 const timeoutPassword = "VIPADG05"; // Timeout password
 const wrongPassword = "VIPADG67"; // Wrong password with 3 attempts
 
-function validatePassword(event) {
-  event.preventDefault(); // Prevent form submission
-
+function validatePassword() {
   // Get the entered password
   const enteredPassword = document.getElementById("password").value;
 
@@ -18,8 +16,10 @@ function validatePassword(event) {
 
   // Password validation logic
   if (enteredPassword === correctPassword1 || enteredPassword === correctPassword2) {
-    // Redirect to the next page with query parameters
-    window.location.href = `nextpage.html?access=granted&user=${encodeURIComponent(enteredPassword)}`;
+    // Correct Password
+    messageDiv.textContent = "Acesso concedido! Bem-vindo ao canal privado.";
+    messageDiv.className = "message success";
+	window.location.href = `nextpage.html?access=granted&user=${encodeURIComponent(enteredPassword)}`;
   } else if (enteredPassword === timeoutPassword) {
     // Timeout password
     messageDiv.textContent = "Sessão expirada. Por favor, tente novamente.";
@@ -33,4 +33,7 @@ function validatePassword(event) {
     messageDiv.textContent = "Senha incorreta! Por favor, tente novamente.";
     messageDiv.className = "message error";
   }
+
+  // Prevent form submission
+  return false;
 }
